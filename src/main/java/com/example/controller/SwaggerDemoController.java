@@ -18,7 +18,7 @@ public class SwaggerDemoController {
     @ApiImplicitParam(name = "b", value = "入参", required = true, dataType = "Boolean")
     @RequestMapping(value="/bool", method = RequestMethod.GET)
     public boolean boolGet(Boolean b) {
-        return true;
+        return b;
     }
 
     @RequestMapping(value="/bool", method = RequestMethod.POST)
